@@ -1,0 +1,46 @@
+.u-pos-relative {
+  position: relative;
+}
+
+.u-pos-abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.u-t-cen {
+  text-align: center;
+}
+
+.u-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.u-dis-block {
+  display: block;
+}
+
+.u-dis-flex {
+  display: flex;
+}
+
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+
+.u-space-evenly{
+  // For Browser fallback
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.u-hidden\@md-down {
+  @include breakpoint-max(md) { 
+    visibility: hidden;
+    display: none;
+  }
+}

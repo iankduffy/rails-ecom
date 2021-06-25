@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box; 
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  transition:  0s;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  display: block; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%; 
+  border: 0;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  color: $black;
+}
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+  font-size: 15px; 
+  @include breakpoint-min(lg) {
+    font-size: 14px;
+  }
+}
